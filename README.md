@@ -6,7 +6,7 @@ It does **not** contain the paid Cadence Starter source, customer ZIP, private m
 
 ## What Cadence Starter is
 
-Cadence Starter is a local workflow engine for documentary, explainer, and faceless-media projects. It tracks declared files and dependencies, identifies stale or blocked work, fingerprints human approvals, and previews configured commands before explicit execution.
+Cadence Starter is a local workflow engine for documentary, explainer, and faceless-media projects. It tracks declared files and dependencies, identifies stale or blocked work, fingerprints human approvals, and previews configured commands before explicit execution. It does not require Claude or any AI account.
 
 The complete paid product includes the Python source, editable registries, schemas, templates, fictional example, handbook, commercial-use licence, and 18 automated tests.
 
@@ -15,6 +15,10 @@ The complete paid product includes the Python source, editable registries, schem
 Open `index.html` locally or visit the GitHub Pages site. The terminal sequence is an illustrative walkthrough using the real Cadence state names and command shapes; it contains no customer or private project data.
 
 ![Cadence Starter approval-staleness walkthrough](assets/cadence-demo.gif)
+
+## Free field notes
+
+The public site includes three vendor-neutral guides covering content-bound approvals, a practical faceless-video stage map, and stale-output detection. They provide a search-led discovery path without requiring personal social accounts.
 
 ## Product
 

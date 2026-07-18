@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A practical faceless-video workflow - Cadence field notes</title>
+  <meta name="description" content="A practical nine-stage faceless-video production workflow with source, script, and release approval gates.">
+  <meta property="og:title" content="A practical faceless-video workflow"><meta property="og:description" content="Map the work from source review to release, then make every human gate explicit."><meta property="og:type" content="article">
+  <link rel="canonical" href="https://noxytree.github.io/cadence-starter/guides/faceless-video-workflow/"><link rel="stylesheet" href="../../styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"A practical faceless-video workflow","author":{"@type":"Organization","name":"NoxyTree"},"datePublished":"2026-07-18","dateModified":"2026-07-18","mainEntityOfPage":"https://noxytree.github.io/cadence-starter/guides/faceless-video-workflow/"}</script>
+</head>
+<body>
+  <header class="topbar wrap"><a class="wordmark" href="../../"><span>CADENCE</span><b>/</b>STARTER</a><nav><a href="../">All field notes</a><a class="nav-buy" href="https://ko-fi.com/s/a8645f925f?utm_source=github_pages&amp;utm_medium=guide&amp;utm_campaign=faceless_workflow">BUY / $49</a></nav></header>
+  <main>
+    <header class="guide-hero wrap"><p class="label"><span></span>FIELD NOTE 02 / WORKFLOW</p><h1>A faceless-video pipeline is still an editorial pipeline.</h1><p class="hero-lede">Automation can move files and call tools. It cannot remove the need to review sources, approve a script, or decide whether a release is responsible.</p></header>
+    <div class="guide-layout wrap">
+      <aside class="guide-aside">8 minute read<br>Vendor-neutral<br>Updated 18 July 2026<a href="../">View all field notes</a></aside>
+      <article class="guide-body">
+        <h2>Start with stages, not apps</h2>
+        <p>Tool-first pipelines become brittle because every new model or editor changes the architecture. A stage-first pipeline describes durable work: research, source review, scripting, scene planning, asset collection, narration, assembly, quality control, and release.</p>
+        <p>Each stage should declare its inputs, outputs, upstream dependencies, and whether it is manual or executable. Tools can then be swapped without changing the meaning of the workflow.</p>
+        <h2>A useful nine-stage map</h2>
+        <ol>
+          <li><strong>Research:</strong> create a brief, claims table, and source list.</li>
+          <li><strong>Source review:</strong> confirm the chosen evidence and record an approval.</li>
+          <li><strong>Script:</strong> write the narration against the reviewed claim set.</li>
+          <li><strong>Script approval:</strong> fingerprint the exact script version cleared for production.</li>
+          <li><strong>Scene plan:</strong> map narration beats to visual requirements.</li>
+          <li><strong>Assets and narration:</strong> create or collect the material needed by the plan.</li>
+          <li><strong>Rough cut:</strong> assemble a reviewable render.</li>
+          <li><strong>Quality control:</strong> inspect factual, visual, audio, rights, and platform concerns.</li>
+          <li><strong>Release approval:</strong> record the final human decision before publication.</li>
+        </ol>
+        <div class="callout"><strong>Model the decision, not the tool:</strong> “script approval” remains meaningful whether the draft came from a person, Claude, a local model, or several tools.</div>
+        <h2>Give every stage a contract</h2>
+        <p>A stage contract should be boring and explicit. Research may require <code>brief.md</code>, <code>claims.csv</code>, and <code>sources.csv</code>. Scene planning may require an approved script and produce <code>scenes.json</code>. A rough cut may depend on scenes, assets, and narration, then produce a video file.</p>
+        <p>Empty files should not count. Paths should stay inside the project root. Executable commands should be arrays rather than shell strings so unreviewed interpolation cannot introduce arbitrary shell behavior.</p>
+        <h2>Default to preview</h2>
+        <p>The workflow should show the next command before running it. Explicit execution is especially important when a stage calls a paid API, a long render, or a publication tool. Retries should be bounded and logs should record the command, exit code, duration, and output without storing credentials.</p>
+        <h2>Keep publication separate</h2>
+        <p>A completed file is not the same as a publish decision. Treat release as a gate with its own reviewed inputs. This keeps a successful render, script, or automation from becoming accidental authorization to make something public.</p>
+        <h2>Minimal project checklist</h2>
+        <ul><li>Stages have stable IDs and explicit dependencies.</li><li>Inputs and outputs are project-relative paths.</li><li>Manual stages are first-class, not treated as failures.</li><li>Approvals fingerprint the files actually reviewed.</li><li>Changed inputs mark derived outputs stale.</li><li>Commands preview before execution.</li><li>Publishing requires a separate release decision.</li></ul>
+        <div class="guide-cta"><h3>Want the working skeleton?</h3><p>Cadence Starter packages this stage graph, resolver, approval system, safe runner, templates, schemas, and a fictional example as readable local Python source.</p><a class="button primary" href="https://ko-fi.com/s/a8645f925f?utm_source=github_pages&amp;utm_medium=guide_cta&amp;utm_campaign=faceless_workflow">SEE CADENCE STARTER</a></div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer wrap"><span>NoxyTree / Cadence field notes</span><span>Workflow before tool choice.</span><a href="../../">PRODUCT</a></footer>
+</body>
+</html>

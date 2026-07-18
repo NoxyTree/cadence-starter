@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Cadence field notes</title>
+    <link>https://noxytree.github.io/cadence-starter/guides/</link>
+    <description>Practical notes on dependable local media workflows.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item><title>Approval gates for AI-assisted media pipelines</title><link>https://noxytree.github.io/cadence-starter/guides/approval-gates-ai-media-pipelines/</link><guid>https://noxytree.github.io/cadence-starter/guides/approval-gates-ai-media-pipelines/</guid><pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate><description>Why approval state must be tied to exact content.</description></item>
+    <item><title>A practical faceless-video workflow</title><link>https://noxytree.github.io/cadence-starter/guides/faceless-video-workflow/</link><guid>https://noxytree.github.io/cadence-starter/guides/faceless-video-workflow/</guid><pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate><description>A nine-stage production map with explicit human gates.</description></item>
+    <item><title>How to detect stale files in media production</title><link>https://noxytree.github.io/cadence-starter/guides/stale-files-media-production/</link><guid>https://noxytree.github.io/cadence-starter/guides/stale-files-media-production/</guid><pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate><description>What timestamps, hashes, and dependency graphs can prove.</description></item>
+  </channel>
+</rss>

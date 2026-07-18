@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Approval gates for AI-assisted media pipelines - Cadence field notes</title>
+  <meta name="description" content="A practical guide to content-bound approvals, invalidation, and dependency gates in AI-assisted and automated media production.">
+  <meta property="og:title" content="Approval gates for AI-assisted media pipelines"><meta property="og:description" content="A green checkbox is not enough. Approval should belong to the exact content that was reviewed.">
+  <meta property="og:type" content="article"><meta property="og:url" content="https://noxytree.github.io/cadence-starter/guides/approval-gates-ai-media-pipelines/">
+  <link rel="canonical" href="https://noxytree.github.io/cadence-starter/guides/approval-gates-ai-media-pipelines/"><link rel="stylesheet" href="../../styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Approval gates for AI-assisted media pipelines","author":{"@type":"Organization","name":"NoxyTree"},"datePublished":"2026-07-18","dateModified":"2026-07-18","mainEntityOfPage":"https://noxytree.github.io/cadence-starter/guides/approval-gates-ai-media-pipelines/"}</script>
+</head>
+<body>
+  <header class="topbar wrap"><a class="wordmark" href="../../"><span>CADENCE</span><b>/</b>STARTER</a><nav><a href="../">All field notes</a><a class="nav-buy" href="https://ko-fi.com/s/a8645f925f?utm_source=github_pages&amp;utm_medium=guide&amp;utm_campaign=approval_gates">BUY / $49</a></nav></header>
+  <main>
+    <header class="guide-hero wrap"><p class="label"><span></span>FIELD NOTE 01 / APPROVALS</p><h1>Approval should belong to content, not a checkbox.</h1><p class="hero-lede">In a media pipeline, “approved” is not a permanent property of a filename. It is a statement that a particular person reviewed a particular version of particular content.</p></header>
+    <div class="guide-layout wrap">
+      <aside class="guide-aside">7 minute read<br>Vendor-neutral<br>Updated 18 July 2026<a href="../">View all field notes</a></aside>
+      <article class="guide-body">
+        <h2>The failure</h2>
+        <p>A source list is reviewed. A script is approved. Scene planning begins. Then somebody rewrites the last paragraph of the script. The project board still says “approved” because the checkbox is attached to the task or filename, not the bytes that were reviewed.</p>
+        <p>Nothing has crashed. Every tool is behaving as designed. The failure is semantic: downstream work is now being built from content that never received the recorded approval.</p>
+        <div class="callout"><strong>Useful rule:</strong> if the reviewed content changes, the approval must stop matching automatically.</div>
+        <h2>The smallest dependable approval record</h2>
+        <p>An approval record needs four things: the gate name, the reviewer, the review time, and a deterministic fingerprint of every file covered by the decision. A SHA-256 hash is a common choice because the same bytes produce the same value and a meaningful edit produces a different one.</p>
+        <pre>{
+  "gate": "script",
+  "approved_by": "editor",
+  "approved_at": "2026-07-18T10:30:00Z",
+  "files": {
+    "script/script.md": "sha256:..."
+  }
+}</pre>
+        <p>When the workflow is resolved later, hash the current file again. A match means the approval still refers to the current content. A mismatch means the gate is waiting for review. This does not decide whether the content is good; it only prevents an old decision from silently applying to new material.</p>
+        <h2>Invalidation should travel downstream</h2>
+        <p>A reopened script gate should block scene planning, narration, editing, and release when those stages depend on the script. That propagation requires an explicit dependency graph. Without it, each script must contain its own improvised logic for deciding what can run.</p>
+        <p>The resolver should answer two separate questions for every stage:</p>
+        <ol><li>Are this stage's own required inputs and outputs present and current?</li><li>Are all upstream dependencies complete, including their approval gates?</li></ol>
+        <p>Keeping those questions separate makes failures explainable. “Blocked because script is waiting for approval” is actionable. “Pipeline failed” is not.</p>
+        <h2>What an approval gate cannot prove</h2>
+        <p>A content fingerprint proves that the reviewed files have not changed since the recorded decision. It does not prove that sources are licensed, claims are accurate, narration is ethical, or a release is safe. Those remain human judgments. Good workflow software preserves the boundary instead of pretending to automate it.</p>
+        <h2>Implementation checklist</h2>
+        <ul>
+          <li>Normalize project-relative file paths before hashing.</li>
+          <li>Refuse missing or empty files at approval time.</li>
+          <li>Store the algorithm with each fingerprint.</li>
+          <li>Record the reviewer as supplied metadata, not verified identity.</li>
+          <li>Re-resolve dependencies every time status is requested.</li>
+          <li>Make invalidation automatic and re-approval explicit.</li>
+          <li>Never treat a hash as a substitute for editorial review.</li>
+        </ul>
+        <div class="guide-cta"><h3>Cadence Starter implements this pattern locally.</h3><p>It includes content-bound approval gates, dependency resolution, a worked media project, source code, and 18 tests.</p><a class="button primary" href="https://ko-fi.com/s/a8645f925f?utm_source=github_pages&amp;utm_medium=guide_cta&amp;utm_campaign=approval_gates">SEE THE $49 STARTER</a></div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer wrap"><span>NoxyTree / Cadence field notes</span><span>No AI account required.</span><a href="../../">PRODUCT</a></footer>
+</body>
+</html>
