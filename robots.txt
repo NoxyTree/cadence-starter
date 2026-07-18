@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noxytree.github.io/cadence-starter/sitemap.xml
+
