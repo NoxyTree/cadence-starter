@@ -36,6 +36,9 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { max-width: 740px; margin-bottom: 1.7rem; font-size: clamp(3.4rem, 6.3vw, 6.25rem); line-height: .91; letter-spacing: -.07em; }
 h1 em { color: var(--orange); font-style: normal; }
 .hero-lede { max-width: 690px; font-size: 1.18rem; line-height: 1.65; color: #383b37; }
+.solo-offer { max-width: 690px; margin: 1.35rem 0 0; padding: 1rem 1.15rem; border: 2px solid var(--ink); border-left: 8px solid var(--orange); background: white; display: grid; grid-template-columns: auto 1fr auto; gap: .65rem 1rem; align-items: center; font: 800 .7rem/1.45 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.solo-offer span { color: var(--muted); font-weight: 700; }
+.solo-offer a { color: var(--blue); white-space: nowrap; text-underline-offset: 4px; }
 .actions { display: flex; gap: .85rem; margin-top: 2.1rem; align-items: stretch; }
 .button { display: inline-flex; min-height: 52px; padding: .9rem 1.15rem; align-items: center; justify-content: center; gap: 1rem; border: 2px solid var(--ink); font: 900 .76rem/1 ui-monospace, SFMono-Regular, Consolas, monospace; text-decoration: none; letter-spacing: .035em; transition: transform .14s ease, box-shadow .14s ease; }
 .button:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--ink); }
@@ -182,6 +185,7 @@ h1 em { color: var(--orange); font-style: normal; }
   .hero { padding: 4.2rem 0 5rem; }
   h1 { font-size: clamp(3rem,15vw,4.6rem); }
   .actions { flex-direction: column; }.button { width: 100%; }
+  .solo-offer { grid-template-columns: 1fr; }
   .facts { flex-direction: column; }
   .demo-frame { box-shadow: 7px 7px 0 var(--blue); }.tape { display: none; }.demo-foot span { display: none; }
   .sample-strip, .problem, .inside, .commands, .field-notes, .faq, .buy-section { padding-block: 5rem; }
