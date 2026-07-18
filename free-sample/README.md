@@ -27,6 +27,6 @@ You will see `STALE` and `BLOCKED`, because the current SHA-256 fingerprint no l
 Cadence Starter is local Python source for solo media pipelines. It tracks real files and dependencies, invalidates stale approvals, blocks unsafe downstream work, and names the next safe action.
 
 - Product walkthrough: https://noxytree.github.io/cadence-starter/
-- Founding offer: https://ko-fi.com/s/a8645f925f
+- First-sale offer: https://ko-fi.com/noxytree/link/FIRSTSALE
 
 No Claude, OpenAI, hosted account, telemetry, or subscription is required.
