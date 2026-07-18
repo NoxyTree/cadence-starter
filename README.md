@@ -1,18 +1,26 @@
-# Cadence Starter public preview
+# Cadence Starter + Approval Guard
 
-This repository contains the public landing page and a truthful product demonstration for [Cadence Starter](https://ko-fi.com/noxytree/link/FIRSTSALE).
+**Two local Python source tools that stop automated work when approved inputs have changed.**
+
+[Download the free runnable release](https://github.com/NoxyTree/cadence-starter/releases/tag/free-approval-sample-v1.0.0) · [Inspect the exact 72-file delivery](https://noxytree.github.io/cadence-starter/bundle-receipt/) · [Get both source tools for $1.05 until midnight](https://ko-fi.com/noxytree/link/FIRSTSALE)
+
+`31 passing tests` · `Python 3.10+` · `Windows / macOS / Linux` · `No AI account` · `No subscription`
+
+This repository contains the public landing page, runnable free sample, field notes, and a truthful product demonstration for the Cadence Starter + Approval Guard source bundle.
 
 It does **not** contain the paid Cadence Starter source, customer ZIP, private media, credentials, channel data, prompts, production integrations, or the seller's private pipeline.
 
-## What Cadence Starter is
+## What the bundle does
 
-Cadence Starter is a local workflow engine for documentary, explainer, and faceless-media projects. It tracks declared files and dependencies, identifies stale or blocked work, fingerprints human approvals, and previews configured commands before explicit execution. It does not require Claude or any AI account.
+Cadence Starter tracks declared files and dependencies, identifies stale or blocked work, fingerprints human approvals, names the next safe action, and previews allow-listed commands before explicit execution.
 
-The paid source bundle includes the complete Cadence Starter engine plus the focused Approval Guard Kit: editable registries, schemas, templates, a fictional worked project, integration recipes, commercial-use licences, and 31 automated tests across both tools.
+Approval Guard Kit extracts the focused reliability rule for pipelines that already exist: named gates over one file, many files, or recursive directories; per-file SHA-256 manifests; added, changed, deleted, and renamed-file detection; JSON output; and CI-safe exit codes.
+
+The paid bundle includes both complete readable source tools, editable registries, schemas, templates, a fictional worked project, integration recipes, commercial-use licences, 72 delivered files, and 31 tests.
 
 ## Free runnable sample
 
-The repository includes a dependency-free [approval-fingerprint sample](free-sample/README.md) and a ready-to-download ZIP. It proves the core stale-approval behaviour against a real local file without exposing or pretending to be the complete paid engine.
+The repository includes a dependency-free [approval-fingerprint sample](free-sample/README.md), a ready-to-download ZIP, and a [versioned GitHub release](https://github.com/NoxyTree/cadence-starter/releases/tag/free-approval-sample-v1.0.0). It proves the core stale-approval behaviour against a real local file without exposing or pretending to be the complete paid engine.
 
 ## Public demo
 
