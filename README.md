@@ -35,7 +35,7 @@ The public site includes three vendor-neutral guides covering content-bound appr
 ## Product
 
 - [Inspect the exact 72-file delivery receipt](https://noxytree.github.io/cadence-starter/bundle-receipt/)
-- [Get the standalone Approval Guard Kit for $1](https://ko-fi.com/s/33d62f48e4)
+- [Get the standalone Approval Guard Kit for $0.15 with FIRSTSALE until midnight](https://ko-fi.com/noxytree/link/FIRSTSALE) (then $1 base price)
 - [View Cadence Starter](https://ko-fi.com/noxytree/link/FIRSTSALE)
 - Base price: $7 USD or more; launch code `FIRSTSALE` reduces checkout to $1.05 through midnight, 18 July 2026
 - Requirements: Python 3.10+, Windows/macOS/Linux, basic terminal and text-file comfort
