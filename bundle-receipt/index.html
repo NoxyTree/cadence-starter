@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadence source bundle receipt - exact delivery manifest</title>
+  <meta name="description" content="Inspect the exact Cadence Starter and Approval Guard Kit delivery: 72 files, 31 tests, licences, delivery route, and SHA-256 checksums.">
+  <meta name="theme-color" content="#f2efe6">
+  <meta property="og:title" content="Cadence source bundle - exact delivery receipt">
+  <meta property="og:description" content="Two local Python source ZIPs, 72 files, 31 tests, exact contents and package checksums before you pay.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://noxytree.github.io/cadence-starter/assets/cadence-cover.png">
+  <meta property="og:url" content="https://noxytree.github.io/cadence-starter/bundle-receipt/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://noxytree.github.io/cadence-starter/bundle-receipt/">
+  <link rel="stylesheet" href="../styles.css?v=20260718-receipt">
+</head>
+<body class="receipt-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar wrap">
+    <a class="wordmark" href="../" aria-label="Cadence Starter home"><span>CADENCE</span><b>/</b>STARTER</a>
+    <nav aria-label="Primary navigation">
+      <a href="#delivery">Delivery</a>
+      <a href="#files">Files</a>
+      <a href="#checksums">Checksums</a>
+      <a class="nav-buy" href="https://ko-fi.com/noxytree/link/FIRSTSALE">UNTIL MIDNIGHT / $1.05</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="guide-hero wrap">
+      <p class="label"><span></span>BUYER-SAFE PACKAGE RECEIPT</p>
+      <h1>See exactly what arrives.<br><em>Before you pay.</em></h1>
+      <p class="hero-lede">This page exposes the current 1.0.0 delivery manifest, test counts, licence boundary, delivery route, and package hashes. It does not publish the paid source.</p>
+      <div class="actions">
+        <a class="button primary" href="https://ko-fi.com/noxytree/link/FIRSTSALE">GET BOTH SOURCE TOOLS <span>$1.05</span></a>
+        <a class="button ghost" href="../downloads/cadence-approval-sample.zip">TRY THE FREE SAMPLE</a>
+      </div>
+    </section>
+
+    <section class="inside wrap" id="delivery">
+      <div class="section-intro">
+        <p class="label"><span></span>DELIVERY RECEIPT</p>
+        <h2>Two ZIPs.<br>Seventy-two files.</h2>
+        <p>Cadence Starter contains 62 files and 18 tests. Approval Guard Kit contains 10 files and 13 tests. Both run locally on Python 3.10+ across Windows, macOS, and Linux.</p>
+      </div>
+      <div class="deliverables">
+        <article><b>01</b><div><h3>Cadence Starter 1.0.0</h3><p>The customer ZIP is attached to the Ko-fi order for automatic digital delivery.</p></div></article>
+        <article><b>02</b><div><h3>Approval Guard Kit 1.0.0</h3><p>The private post-payment buyer message contains the separate, unlisted kit download.</p></div></article>
+        <article><b>03</b><div><h3>Complete readable source</h3><p>No compiled binary, telemetry client, account SDK, API key, hosted runtime, Claude account, or OpenAI account.</p></div></article>
+        <article><b>04</b><div><h3>Single-operator commercial licences</h3><p>One operator may modify and use both tools across unlimited personal and client workflows. Redistribution, resale, team sharing, and offering the tools themselves as a service are excluded.</p></div></article>
+        <article><b>05</b><div><h3>Internal verification manifests</h3><p>Each ZIP includes <code>MANIFEST-SHA256.txt</code> so the buyer can verify every delivered file after extraction.</p></div></article>
+      </div>
+    </section>
+
+    <section class="commands" id="files">
+      <div class="wrap">
+        <div class="commands-head">
+          <div><p class="label light"><span></span>EXACT TOP-LEVEL CONTENTS</p><h2>Nothing hidden behind “and more.”</h2></div>
+          <p>The compact trees below name every source area, guide, schema, template, example, and test delivered in the two archives.</p>
+        </div>
+        <div class="inside-grid">
+          <div class="file-window">
+            <div class="window-bar"><i></i><i></i><i></i><span>Cadence Starter 1.0.0 / 62 files</span></div>
+            <pre>cadence.bat / cadence.sh
+OPEN_ME_FIRST.txt
+README.md / CHANGELOG.md
+LICENSE.txt
+MANIFEST-SHA256.txt
+pyproject.toml
+
+<span class="folder">cadence_starter/</span>
+  approvals.py / builtin.py
+  cli.py / hashing.py / io.py
+  paths.py / registry.py
+  resolver.py / runner.py
+  scaffold.py / validation.py
+  __init__.py / __main__.py
+  <span class="folder">data/</span> stages.json / templates.json
+
+<span class="folder">docs/</span>
+  ARCHITECTURE.md / PLUGIN_GUIDE.md
+  PRODUCT_BOUNDARY.md / QC_PLAYBOOK.md
+  SOURCE_SAFETY.md / START_HERE.md / SUPPORT.md
+
+<span class="folder">schemas/</span>
+  approvals / project / channel / stages / templates
+
+<span class="folder">templates/</span>
+  brief / claims / QC / scenes / sources
+
+<span class="folder">examples/glass-frog-demo/</span>
+  complete fictional project
+  research / script / scenes / assets / QC / release
+  walkthrough + JSON registries
+
+<span class="folder">tests/</span>
+  CLI / paths / resolver / runner / validation
+  18 passing tests</pre>
+          </div>
+          <div class="file-window">
+            <div class="window-bar"><i></i><i></i><i></i><span>Approval Guard Kit 1.0.0 / 10 files</span></div>
+            <pre>approval_guard.py
+OPEN_ME_FIRST.txt
+README.md / CHANGELOG.md
+LICENSE.txt
+MANIFEST-SHA256.txt
+
+<span class="folder">docs/</span>
+  INTEGRATION_RECIPES.md
+
+<span class="folder">examples/mini-project/</span>
+  script.md / TRY_ME.txt
+
+<span class="folder">tests/</span>
+  test_approval_guard.py
+  13 passing tests
+
+<span class="folder">guard capabilities</span>
+  named gates
+  one or many files
+  recursive directories
+  per-file SHA-256 manifests
+  added / changed / deleted detection
+  JSON output / CI-safe exit codes
+  project-root path protection</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq wrap" id="checksums">
+      <div class="section-intro"><p class="label"><span></span>PACKAGE IDENTITY</p><h2>Verify the download.</h2></div>
+      <div class="faq-list">
+        <details open><summary>Cadence Starter 1.0.0 customer ZIP</summary><p><code>709f1a0899adcc56cc38921bbea19b6a870f3080274b6c52cc31fdb421986b64</code></p></details>
+        <details open><summary>Approval Guard Kit 1.0.0 customer ZIP</summary><p><code>071b54f302a128c08efd7678a19f2662737c1181b7e9f7955a5065f4ff30703c</code></p></details>
+        <details><summary>What do these hashes prove?</summary><p>They identify the exact current customer archives used to produce this receipt. After downloading, calculate SHA-256 locally and compare it with the value above. The internal manifest then verifies every extracted file.</p></details>
+        <details><summary>What is deliberately absent?</summary><p>No seller account, private pipeline, customer data, third-party credentials, model access, generated media, or one-click publishing service is included.</p></details>
+      </div>
+    </section>
+
+    <section class="buy-section">
+      <div class="wrap buy-grid">
+        <div><p class="label light"><span></span>EXACT CONTENTS / AUTOMATIC DELIVERY</p><h2>Inspect first.<br>Then decide.</h2></div>
+        <div class="price-card">
+          <p>CADENCE + APPROVAL GUARD SOURCE BUNDLE</p>
+          <strong>$1.05</strong>
+          <span>Code FIRSTSALE through midnight, 18 July 2026. The base price returns to $7 after the deadline.</span>
+          <a class="button primary" href="https://ko-fi.com/noxytree/link/FIRSTSALE">GET BOTH SOURCE TOOLS</a>
+          <small>72 delivered files / 31 passing tests<br>Python 3.10+ / Windows, macOS, Linux</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>NoxyTree / Cadence Starter / 2026</span>
+    <span>Exact package receipt. No paid source exposed.</span>
+    <a href="../">PRODUCT PAGE</a>
+    <a href="https://ko-fi.com/noxytree">KO-FI</a>
+  </footer>
+</body>
+</html>

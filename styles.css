@@ -81,6 +81,7 @@ h1 em { color: var(--orange); font-style: normal; }
 .inside { padding: 9rem 0; }
 .inside > .section-intro { max-width: 760px; margin-bottom: 4rem; }
 .inside-grid { display: grid; grid-template-columns: .86fr 1.14fr; gap: 5rem; align-items: start; }
+.inside-grid > *, .faq > * { min-width: 0; }
 .file-window { border: 2px solid var(--ink); background: #10110f; color: #e9eee7; box-shadow: 10px 10px 0 var(--orange); position: sticky; top: 24px; }
 .window-bar { min-height: 48px; display: flex; align-items: center; gap: .45rem; padding: 0 1rem; border-bottom: 1px solid #353832; color: #aeb3ac; font: .68rem/1 ui-monospace, SFMono-Regular, Consolas, monospace; }
 .window-bar i { width: 8px; height: 8px; border-radius: 50%; background: var(--red); }.window-bar i:nth-child(2) { background: #ffcf4a; }.window-bar i:nth-child(3) { background: var(--acid); margin-right: .6rem; }
@@ -123,6 +124,14 @@ h1 em { color: var(--orange); font-style: normal; }
 .faq details { padding: 1.35rem 0; border-bottom: 2px solid var(--ink); }
 .faq summary { cursor: pointer; font-weight: 900; font-size: 1.02rem; }
 .faq details p { color: var(--muted); margin: 1rem 0 0; max-width: 700px; }
+.faq code { overflow-wrap: anywhere; word-break: break-all; }
+.receipt-page .commands .inside-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.receipt-page .file-window { min-width: 0; width: 100%; }
+.receipt-page .faq { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); }
+.receipt-page .faq-list,
+.receipt-page .faq details,
+.receipt-page .faq code { min-width: 0; max-width: 100%; }
+.receipt-page .faq code { display: block; }
 
 .buy-section { padding: 8rem 0; background: var(--ink); color: white; }
 .buy-grid { display: grid; grid-template-columns: 1fr 430px; gap: 6rem; align-items: center; }
@@ -156,6 +165,9 @@ h1 em { color: var(--orange); font-style: normal; }
 
 @media (max-width: 980px) {
   .hero, .sample-grid, .problem-grid, .inside-grid, .faq, .buy-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+  .receipt-page .commands .inside-grid,
+  .receipt-page .faq { grid-template-columns: minmax(0, 1fr); }
+  .receipt-page .file-window pre { white-space: pre-wrap; overflow-wrap: anywhere; }
   .hero { padding-top: 4.5rem; }
   .file-window { position: static; }
   .commands-head { grid-template-columns: 1fr; gap: 1rem; }
