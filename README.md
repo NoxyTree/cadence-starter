@@ -10,6 +10,10 @@ Cadence Starter is a local workflow engine for documentary, explainer, and facel
 
 The complete paid product includes the Python source, editable registries, schemas, templates, fictional example, handbook, commercial-use licence, and 18 automated tests.
 
+## Free runnable sample
+
+The repository includes a dependency-free [approval-fingerprint sample](free-sample/README.md) and a ready-to-download ZIP. It proves the core stale-approval behaviour against a real local file without exposing or pretending to be the complete paid engine.
+
 ## Public demo
 
 Open `index.html` locally or visit the GitHub Pages site. The terminal sequence is an illustrative walkthrough using the real Cadence state names and command shapes; it contains no customer or private project data.
@@ -23,7 +27,7 @@ The public site includes three vendor-neutral guides covering content-bound appr
 ## Product
 
 - [View Cadence Starter](https://ko-fi.com/s/a8645f925f)
-- Price: $49 USD or more
+- Founding price: $29 USD or more (normally $49)
 - Requirements: Python 3.10+, Windows/macOS/Linux, basic terminal and text-file comfort
 
 ## Repository licence
