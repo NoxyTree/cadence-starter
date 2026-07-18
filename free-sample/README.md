@@ -2,7 +2,7 @@
 
 This dependency-free Python sample proves one specific Cadence Starter idea: an approval should be attached to the exact content reviewed, not merely remembered as a green checkbox.
 
-It is deliberately tiny and is **not** the paid Cadence Starter engine. The full product adds declared stages and dependencies, stale-output resolution, downstream blocking, next-action selection, safe command execution, editable registries, schemas, templates, a worked project, documentation, and 18 automated tests.
+It is deliberately tiny and is **not** the paid source bundle. The bundle contains the complete Cadence Starter engine for declared stages, dependencies, stale-output resolution, next-action selection, safe command execution, schemas, templates, and a worked project; it also contains the separate Approval Guard Kit for named drop-in gates, recursive manifests, JSON output, and CI-safe exit codes. Together they include 31 automated tests.
 
 ## Try it in two minutes
 
@@ -22,9 +22,9 @@ python cadence_sample.py status demo script.md
 
 You will see `STALE` and `BLOCKED`, because the current SHA-256 fingerprint no longer matches the reviewed one. Run the approval command only after reviewing the change.
 
-## Get the complete engine
+## Get the complete source bundle
 
-Cadence Starter is local Python source for solo media pipelines. It tracks real files and dependencies, invalidates stale approvals, blocks unsafe downstream work, and names the next safe action.
+Cadence Starter tracks real files and dependencies, blocks unsafe downstream work, and names the next safe action. Approval Guard Kit packages the stale-approval rule as a focused dependency-free tool for pipelines that already exist. Both are readable local Python source.
 
 - Product walkthrough: https://noxytree.github.io/cadence-starter/
 - First-sale offer: https://ko-fi.com/noxytree/link/FIRSTSALE

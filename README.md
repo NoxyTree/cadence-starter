@@ -8,7 +8,7 @@ It does **not** contain the paid Cadence Starter source, customer ZIP, private m
 
 Cadence Starter is a local workflow engine for documentary, explainer, and faceless-media projects. It tracks declared files and dependencies, identifies stale or blocked work, fingerprints human approvals, and previews configured commands before explicit execution. It does not require Claude or any AI account.
 
-The complete paid product includes the Python source, editable registries, schemas, templates, fictional example, handbook, commercial-use licence, and 18 automated tests.
+The paid source bundle includes the complete Cadence Starter engine plus the focused Approval Guard Kit: editable registries, schemas, templates, a fictional worked project, integration recipes, commercial-use licences, and 31 automated tests across both tools.
 
 ## Free runnable sample
 

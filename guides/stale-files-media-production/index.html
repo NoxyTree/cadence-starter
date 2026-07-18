@@ -38,7 +38,7 @@ rough_cut   blocked               waiting for scene_plan</pre>
         <p>This lets a person act without reading implementation details. It also makes automated reporting safer because the system can describe why it stopped instead of inventing recovery steps.</p>
         <h2>Implementation checklist</h2>
         <ul><li>Reject absolute paths and parent-directory escapes.</li><li>Treat missing and empty outputs as incomplete.</li><li>Compare the newest required input with the oldest required output.</li><li>Hash exact approval inputs and store the algorithm.</li><li>Resolve dependencies before declaring a stage runnable.</li><li>Return a reason with every non-complete state.</li><li>Prefer conservative false positives over silent stale work.</li></ul>
-        <div class="guide-cta"><h3>Cadence Starter includes this resolver.</h3><p>The local source implements path safety, freshness checks, content-bound approvals, dependency propagation, and tests for the failure cases above.</p><a class="button primary" href="https://ko-fi.com/noxytree/link/FIRSTSALE">SEE THE WORKING STARTER FOR $1.05</a></div>
+        <div class="guide-cta"><h3>Get the resolver and the focused guard.</h3><p>Cadence Starter implements path safety, freshness checks, dependency propagation, and next-action resolution. Approval Guard Kit supplies drop-in content-bound gates, recursive manifests, JSON output, and CI exit codes. Together they include 31 tests.</p><a class="button primary" href="https://ko-fi.com/noxytree/link/FIRSTSALE">SEE THE $1.05 SOURCE BUNDLE</a></div>
       </article>
     </div>
   </main>
