@@ -27,6 +27,7 @@ You will see `STALE` and `BLOCKED`, because the current SHA-256 fingerprint no l
 Cadence Starter tracks real files and dependencies, blocks unsafe downstream work, and names the next safe action. Approval Guard Kit packages the stale-approval rule as a focused dependency-free tool for pipelines that already exist. Both are readable local Python source.
 
 - Product walkthrough: https://noxytree.github.io/cadence-starter/
-- First-sale offer: https://ko-fi.com/noxytree/link/FIRSTSALE
+- Exact 72-file / 31-test delivery receipt: https://noxytree.github.io/cadence-starter/bundle-receipt/
+- Launch-day checkout: code `FIRSTSALE` reduces the $7-or-more base price to $1.05 through 23:59 UK time on 18 July 2026: https://ko-fi.com/noxytree/link/FIRSTSALE
 
 No Claude, OpenAI, hosted account, telemetry, or subscription is required.
