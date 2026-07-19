@@ -28,6 +28,6 @@ Cadence Starter tracks real files and dependencies, blocks unsafe downstream wor
 
 - Product walkthrough: https://noxytree.github.io/cadence-starter/
 - Exact 72-file / 31-test delivery receipt: https://noxytree.github.io/cadence-starter/bundle-receipt/
-- Launch-day checkout: code `FIRSTSALE` reduces the $7-or-more base price to $1.05 through 23:59 UK time on 18 July 2026: https://ko-fi.com/noxytree/link/FIRSTSALE
+- Complete source bundle: $7+ at https://ko-fi.com/s/a8645f925f
 
 No Claude, OpenAI, hosted account, telemetry, or subscription is required.
